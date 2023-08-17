@@ -1,0 +1,281 @@
+.predictions {
+  background: white;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.search-inner-faq {
+  position: relative;
+}
+
+.search-inner-faq .predictions {
+  position: absolute;
+}
+
+.predictions a {
+  color: rgb(82, 89, 117);
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 17px;
+  text-shadow: none;
+}
+
+.predictions a:hover {
+  background-color: #ddd;
+}
+
+.search-inner {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* for sub page top sticky search */
+.page-search {
+  padding: unset;
+  display: flex;
+}
+
+.page-search .search-inner {
+  height: 45px;
+}
+
+.page-search .address-area  {
+  border: 1px solid #f0f0f0;
+  min-width: 320px;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 0 0 0 17px;
+  margin-right: 10px;
+}
+
+.page-search button {
+  border-radius: 25px;
+  font-weight: 700;
+  padding: 0px 19px;
+  width: 50px;
+}
+
+.address-input .search-inner {
+  height: unset !important
+}
+
+.address-input .address-area {
+  margin: 0 5px 0 0 !important
+}
+
+.address-input button {
+  border-radius: unset !important
+}
+
+.address-modal {
+  background-color: white;
+  outline: none
+}
+
+/* for header search */
+
+.address-input-header {
+  position: relative;
+  width: 600px;
+  height: 50px;
+  margin: 10px auto 0;
+  transition: margin 0.2s;
+  top: -59px;
+}
+
+.address-input-fade {
+  margin: -110px auto 0;
+}
+
+.address-input-header .search-inner {
+  display: unset;
+}
+
+.address-input-header input {
+  background: rgb(245, 248, 251);
+  border-radius: 50px;
+  padding-left: 21px;
+  width: 600px;
+  height: 50px;
+}
+
+.address-input-header button {
+  border-radius: 50px;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  padding: 10px 23px;
+  font-size: 17px;
+  font-weight: 700;
+  min-width: 182px;
+}
+
+.address-input-header .predictions {
+  background: white;
+  position: absolute;
+  top: 95%;
+  left: unset;
+  width: 600px;
+  border-radius: 3px;
+}
+
+/* for mobile search */
+
+.address-input-mobile {
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  box-shadow: 0 0 5px #aaa;
+  z-index: -1;
+  transition: top 0.3s;
+}
+
+.address-mobile-fade {
+  top: -155px;
+}
+
+.search-container-mobile {
+  width: 80%;
+}
+
+.address-input-mobile .search-inner {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid #f0f0f0;
+}
+
+.address-input-mobile .search-inner input {
+  position: relative;
+  padding-left: 7px;
+}
+
+.address-input-mobile .search-inner button {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  padding: 5px 25px;
+  border-radius: 34px;
+  font-size: 15px;
+}
+
+
+.fade-background {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-search {
+    margin-top: 10px;
+    width: 100%
+  }
+
+  .page-search .search-inner {
+    justify-content: center;
+    height: 45px;
+  }
+
+  .page-search .address-area  {
+    min-width: 80%;
+  }
+
+  .address-area #short-content {
+    max-width: 40px
+  }
+}
+
+/*
+  animations below
+*/
+
+@-webkit-keyframes slide-desktop {
+  from {
+    margin-top: -47px;
+  }
+
+  to {
+    margin-top: 5px !important;
+  }
+}
+
+@keyframes slide-desktop {
+  from {
+    margin-top: -47px;
+  }
+
+  to {
+    margin-top: 5px !important;
+  }
+}
+
+@-webkit-keyframes slide-desktop-fade {
+  from {
+    margin-top: 5px;
+  }
+
+  to {
+    margin-top: -47px !important;
+  }
+}
+
+@keyframes slide-desktop-fade {
+  from {
+    margin-top: 5px;
+  }
+
+  to {
+    margin-top: -47px !important;
+  }
+}
+
+@-webkit-keyframes slide-mobile {
+  from {
+    margin-top: -55px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slide-mobile {
+  from {
+    margin-top: -55px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes slide-mobile-fade {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: -55px;
+  }
+}
+
+@keyframes slide-mobile-fade {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: -55px;
+  }
+}

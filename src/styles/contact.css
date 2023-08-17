@@ -1,0 +1,186 @@
+.contact-container {
+  background-color: #f0f0f0
+}
+
+.contact-top {
+  margin-top: 17px;
+  background: #0C2340;
+  padding: 80px 0;
+  color:white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 720px;
+  margin: auto;
+}
+
+.contact-top a {
+  display: block;
+  outline: none;
+  color: #1c85e8;
+  text-decoration: none;
+  line-height: 1.7
+}
+
+.contact-top h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.text-mobile {
+  display: none
+}
+
+.contact-top h5 {
+  font-size: 22px;
+  margin-right: 85px
+}
+
+.contact-top div p {
+  font-size: 12px
+}
+
+.contact-addresses {
+  max-width: 720px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  background-color: white
+}
+
+.contact-inner-container {
+  background: #0C2340;
+  margin-top: 18px
+}
+
+.contact-addresses-container {
+  max-width: 1600px;
+  background-color: white
+}
+
+.contact-address-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  margin: 50px 0 0 0;
+  justify-content: space-around;
+}
+
+.contact-address-area > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  flex-direction: column;
+  margin: 0 auto 46px auto;
+  border-top: 1px solid #f0f0f0;
+}
+
+.contact-address-area h6 {
+  color: #1d2c4c;
+  font-size: 18px;
+}
+
+.contact-section {
+  padding-top:7rem
+}
+
+.contact-section h6 {
+  font-size: 22px
+}
+
+.contact-section p {
+  font-size: 16px;
+  line-height: 1.7
+}
+
+.contact-section a {
+  outline: none;
+  color: #1c85e8;
+  text-decoration: none;
+}
+
+.contact-addresses p {
+  color: #525975;
+  width: 80%;
+  opacity:0.9;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 3px 0;
+  opacity: 0.9
+}
+
+#contact-header {
+  margin-left:18px;
+  width: auto
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-top {
+    flex-direction: column;
+    margin-top: 20px
+  }
+
+  .text-mobile {
+    color: #525975;
+    display: contents;
+    font-size: 16px !important;
+    line-height: 1.7
+  }
+
+  .contact-top h1 {
+    margin-left: 15px;
+    font-size: 32px
+  }
+
+  .contact-top h5 {
+    font-size: 18px
+  }
+
+  .contact-top div {
+    margin-left: 15px
+  }
+
+  .contact-top div p {
+    margin: 0 auto
+  }
+
+  .contact-address-area {
+    flex-direction: column;
+  }
+
+  .contact-address-area div {
+    margin: 22px
+  }
+
+  .contact-addresses p {
+    width: 100%;
+  }
+
+  .contact-section {
+    padding-top: 0
+  }
+
+  .contact-section h6{
+    margin: 18px 0
+  }
+
+  .first-contact-section {
+    margin-top: 100px !important
+  }
+
+  .contact-container {
+    background-color: white
+  }
+}
+
+
+@media (min-width: 1199px){
+  .contact-top {
+    max-width: 920px;
+  }
+
+  .contact-addresses {
+    max-width: 960px
+  }
+}

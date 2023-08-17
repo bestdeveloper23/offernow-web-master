@@ -1,0 +1,157 @@
+.slider-container {
+  max-width: 960px !important;
+  margin: 0 auto !important;
+}
+
+.slider-container h1 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 100;
+  color: #525975;
+  margin-bottom: 40px
+}
+
+.slider-inner {
+  outline: none !important;
+}
+
+.slider-text-1 {
+  color: rgb(28, 133, 232);
+}
+
+.slider-text-2 {
+  color: #687090
+}
+
+.slick-prev:before, .slick-next:before {
+  display: none;
+}
+
+.carousel-images {
+  display: flex;
+  transition: all 2s;
+  max-width: 750px;
+  justify-content: space-between;
+  margin: 30px auto 0;
+}
+
+.carousel-images .image-container {
+  width: 185px;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  background-size: cover;
+  background-position: center center;
+}
+
+.testimonial-image.active{
+  height: 185px;
+  width: 185px;
+  border: 2px solid rgb(28, 133, 232);
+}
+
+/*
+ .carousel-images {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: all 2s
+}
+
+.carousel-images img {
+  border-radius: 50%;
+  width: 40%;
+  margin: 0 0px;
+  padding: 40px;
+  height:auto;
+  transition: all 0.5s;
+
+   position: relative;
+   animation-name: image-selection;
+  animation-duration: 4s infinite;
+}
+
+@keyframes image-selection {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.carousel-selected-image {
+  padding: 0 !important;
+  padding-right: 1230px !important;
+  height: 300px
+}
+
+#carousel-default-selected {
+  padding: 0
+} */
+
+#slider-next {
+  position: absolute;
+  left: 40px;
+}
+
+#slider-prev {
+  position: absolute;
+  right: 40px;
+}
+
+@media only screen and (max-width: 750px) {
+  #slider-next, #slider-prev {
+    display: none;
+  }
+
+  .carousel-images {
+    max-width: 100%;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 0;
+  }
+
+  .carousel-images div {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .testimonial-image.active{
+    height: 70px;
+    width: 70px;
+  }
+
+  .carousel-images {
+
+  }
+
+  .slider-container {
+    max-width: 80% !important;
+    margin: 0 auto !important;
+  }
+
+  .slider-container h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 100;
+    color: #525975;
+  }
+}
